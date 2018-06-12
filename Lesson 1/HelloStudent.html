@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Manipulation</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+    </style>
+
+</head>
+<body>
+<script>
+    function sayHello(){
+        document.getElementById("myHello").innerHTML = "hello, " + document.getElementById("nName").value;
+    }
+</script>
+
+<form>
+<input type="text" id="nName" placeholder="Enter Your Name Here">
+    <button onlick="sayHello()"> Say Hello!</button>
+
+<h1 id="myHello">Hello, ____ </h1>
+
+</form>
+
+
+
+
+
+
+
+
+
+<h2>Add Student</h2>
+
+<form>
+
+    <input type="text" id="name" placeholder="name">
+
+    <input type="number" id="year" placeholder="year">
+
+    <input type="text" id="subject" placeholder="subject">
+
+    <input type="number" id="Smarks" placeholder="Marks">
+
+    <input type="submit" value="add student">
+
+</form>
+<br>
+<table style="width:100%">
+    <tr>
+        <th>Name</th>
+        <th>Year</th>
+        <th>Subject</th>
+        <th>Marks</th>
+    </tr>
+
+    <tr>
+        <td>Nuni</td>
+        <td>12</td>
+        <td>math</td>
+        <td>10000000</td>
+    </tr>
+</table>
+
+</body>
+</html>
